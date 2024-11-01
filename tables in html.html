@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tables in html </title>
+</head>
+<body>
+    <h1><b><mark>tables in html </mark></b></h1>
+    <h4>so for creating tables we can use the table tag 
+        now for no of  rows in the table we can use the tr tag which stands for table rows
+         and for the column purpose we can use the td tag which stands for table data </h4>
+         <h5>let's suppose i need to create a table for 4 rows and 4 columns then </h5>
+         <table>
+            <tr>
+                <td>row 1 , column 1</td>
+                <td>row 1 , column 2</td>
+                <td>row 1 , column 3</td>
+                <td>row 1 , column 4</td>
+            </tr>
+            <tr>
+                <td>row 2 , column 1</td>
+                <td>row 2 , column 2</td>
+                <td>row 2 , column 3</td>
+                <td>row 2 , column 4</td>
+            </tr>
+            <tr>
+                <td>row 3 , column 1</td>
+                <td>row 3 , column 2</td>
+                <td>row 3 , column 3</td>
+                <td>row 3 , column 4</td>
+            </tr>
+            <tr>
+                <td>row 4 , column 1</td>
+                <td>row 4 , column 2</td>
+                <td>row 4 , column 3</td>
+                <td>row 4 , column 4</td>
+            </tr>
+         </table>
+         <h3>so we have created a table but something is still missing here ya that's the border
+             for solving this purpose we will use the border attribute here let's see how  </h3>
+             <table border="1">
+                <tr>
+                    <td>row 1 , column 1</td>
+                    <td>row 1 , column 2</td>
+                    <td>row 1 , column 3</td>
+                    <td>row 1 , column 4</td>
+                </tr>
+                <tr>
+                    <td>row 2 , column 1</td>
+                    <td>row 2 , column 2</td>
+                    <td>row 2 , column 3</td>
+                    <td>row 2 , column 4</td>
+                </tr>
+                <tr>
+                    <td>row 3 , column 1</td>
+                    <td>row 3 , column 2</td>
+                    <td>row 3 , column 3</td>
+                    <td>row 3 , column 4</td>
+                </tr>
+                <tr>
+                    <td>row 4 , column 1</td>
+                    <td>row 4 , column 2</td>
+                    <td>row 4 , column 3</td>
+                    <td>row 4 , column 4</td>
+                </tr>
+                </table>
+<h4><mark>note - here each box of the table is known as shell </mark></h4>
+<h3>now you can also have a table heading for this you need to use a th tag which stands for the table heading tag </h3>
+<table border = "1">
+    <th>column 1</th>
+    <th>column 2</th>
+    <th>column 3</th>
+    <th>column 4</th>
+    <tr>
+        <td>row 1 , column 1</td>
+        <td>row 1 , column 2</td>
+        <td>row 1 , column 3</td>
+        <td>row 1 , column 4</td>
+    </tr>
+    <tr>
+        <td>row 2 , column 1</td>
+        <td>row 2 , column 2</td>
+        <td>row 2 , column 3</td>
+        <td>row 2 , column 4</td>
+    </tr>
+    <tr>
+        <td>row 3 , column 1</td>
+        <td>row 3 , column 2</td>
+        <td>row 3 , column 3</td>
+        <td>row 3 , column 4</td>
+    </tr>
+    <tr>
+        <td>row 4 , column 1</td>
+        <td>row 4 , column 2</td>
+        <td>row 4 , column 3</td>
+        <td>row 4 , column 4</td>
+    </tr>
+    </table>
+<p>now for spanning the number of rows we can use a rowspan attribute here but <b><mark>
+    if the rowspan attribute is kept 1 
+    then it will show no change and
+     if there is 4 by 4 matrix and i set the rowspan attribute to 10 
+     then it will span all the 4 rows without showing the error the same is with the column span too for that you need to use the colspan tag</mark></b></p>
+    <table border="1">
+        <tr>
+            <td rowspan="3">row 1 , column 1</td>
+            <td>row 1 , column 2</td>
+            <td>row 1 , column 3</td>
+            <td>row 1 , column 4</td>
+        </tr>
+        <tr>
+            <td>row 2 , column 1</td>
+            <td>row 2 , column 2</td>
+            <td>row 2 , column 3</td>
+            <td>row 2 , column 4</td>
+        </tr>
+        <tr>
+            <td>row 3 , column 1</td>
+            <td>row 3 , column 2</td>
+            <td>row 3 , column 3</td>
+            <td>row 3 , column 4</td>
+        </tr>
+        <tr>
+            <td>row 4 , column 1</td>
+            <td>row 4 , column 2</td>
+            <td>row 4 , column 3</td>
+            <td>row 4 , column 4</td>
+        </tr>
+     </table>
+     <p><h3>let's also see the example of colspan </h3></p>
+     <table border="1">
+        <tr>
+            <td colspan="3ss">row 1 , column 1</td>
+            <td>row 1 , column 2</td>
+            <td>row 1 , column 3</td>
+            <td>row 1 , column 4</td>
+        </tr>
+        <tr>
+            <td>row 2 , column 1</td>
+            <td>row 2 , column 2</td>
+            <td>row 2 , column 3</td>
+            <td>row 2 , column 4</td>
+        </tr>
+        <tr>
+            <td>row 3 , column 1</td>
+            <td>row 3 , column 2</td>
+            <td>row 3 , column 3</td>
+            <td>row 3 , column 4</td>
+        </tr>
+        <tr>
+            <td>row 4 , column 1</td>
+            <td>row 4 , column 2</td>
+            <td>row 4 , column 3</td>
+            <td>row 4 , column 4</td>
+        </tr>
+     </table>
+</body>
+</html>

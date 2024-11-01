@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>input tags </title>
+
+</head>
+<body>
+    <h1><b><i><mark>input tags </mark></i></b></h1>
+    <h3>for this purpose you can use the input tags and describe the type of values you need to put in it </h3>
+    type your username in the space provided : 
+    <input type="text">
+     
+    <h4>now if you want to create a label for your input tag only then 
+        for that u can use the label tag and 
+        provide the same id in the label tag as you have provided in your input tag </h4>
+
+        <label for="urname">enter username</label>
+        <input type="text" id = "urname">
+         <h4><b>now you don't want your input box to be blank so for that you can use the placeholder tag </b></h4>
+
+         <label for="urname">enter your username :</label>
+         <input type="text" id = "urname" placeholder="enter your username here ....!!!">
+         <H3> NOW LET'S SUPPOSE I NEED ANOTHER BOX FOR INSERTING THE PASSWORD FOR THAT
+             I NEED A NEW LINE FOR NEW LINE WE CAN USE THE  BR CLOSING TAG WHICH STANDS FOR BREAK CLOSING TAG
+         </H3>
+          <label for="urname"> username: </label>
+          <input type="text" id="urname" placeholder="enter your username here ...!!!">
+          </BR>
+          </BR>
+         <label for="password ">password </label>
+         <input type=" text" id="password" placeholder="enter your password here....!!!">
+          <h3>now in the password box i don't want anyone to see my password so for that i
+             can select the type attribute as password rather then text in input tag</h3>
+             <label for="urname"> username: </label>
+             <input type="text" id="urname" placeholder="enter your username here ...!!!">
+             </BR>
+             </BR>
+            <label for="password">password </label>
+            <input type="password" id="password" placeholder="enter your password here....!!!">
+            <h4>now for marking it as an important field we use reqouired attribute </h4>
+            <label for="urname"> username: </label>
+            <input type="text" id="urname" placeholder="enter your username here ...!!!"  required>
+            </BR>
+            </BR>
+           <label for="password">password </label>
+           <input type="password" id="password" placeholder="enter your password here....!!!" required>
+            </br></br>
+           <label for="email">enter email</label>
+           <input type="email" id="email" placeholder="enter your email here " required>
+           <h3>  now if you want the box to accept the no only in  your phn no box you can set the type attribute to numbers for eg </h3>
+           <label for="phn">phn no :</label>
+           <input type="number" id="phn" placeholder="enter your phn no here ">
+           <h2>so now if i want the user to input his\her gender then i would be using the radio type attribute but there is one drawback 
+            here that's that the radio button is not restricted to only one option</h2>
+            <label for="gender">gender :</label>
+            <br>
+            <input type="radio" id="gender">male
+            <br>
+            <input type="radio" id="gender">female
+            <br>
+            <input type="radio" id="gender">prefer not to say
+            <br> 
+            <h1><mark>here 1 restriction is that the gender button or the radio button is not restricted to one option only
+                so in order to solve this problem we will use the name attribute of gender type let's see an example </mark></h1>
+                <br> 
+                <label for="gender">gender:</label>
+                <br>
+                <input type="radio" id="gender" name="gender">male
+                <br>
+                <input type="radio" id="gender" name="gender">female
+                <br>
+                <input type="radio" id="gender" name="gender">prefer not to say
+                <br>
+                <h3><mark>now if you want to select the multiple option then u can use checkbox type attribute for that </mark></h3>
+                <label >select the courses you want to learn</label>
+                <br>
+                <label for="c">c language </label>
+                <input type="checkbox" name="courses">
+                <br>
+                <label for="c++">c++</label>
+                <input type="checkbox" name="courses">
+                <br>
+                <label for="python">python</label>
+                <input type="checkbox" name="courses">
+                <br>
+                <label for="jave">java</label>
+                <input type="checkbox" name="courses">
+                <h2><mark>now if i want the default options to be selected for that  i can use  the checked word for example i
+                     want the male to be the default value to be selected and java and c++ to be selected as a default
+                      value then let's see an example</mark></h2>
+                      <label for="gender">gender:</label>
+                <br>
+                <input type="radio" id="gender" name="gender" checked>male
+                <br>
+                <input type="radio" id="gender" name="gender">female
+                <br>
+                <input type="radio" id="gender" name="gender">prefer not to say
+                <br>
+                <br>
+                <label for="c">c language </label>
+                <input type="checkbox" name="courses">
+                <br>
+                <label for="c++">c++</label>
+                <input type="checkbox" name="courses" checked>
+                <br>
+                <label for="python">python</label>
+                <input type="checkbox" name="courses">
+                <br>
+                <label for="jave">java</label>
+                <input type="checkbox" name="courses" checked>
+                <h3><b>ok so now if i want the options in the dropdown menu then 
+                    for that i need to use the option tag in the  selection tag 
+                     rather than the input tag let's see how</b></h3>
+                    <label for="course" >select your course language </label>
+                    <select name="course" id="course">
+                        <option value="eng">english</option>
+                        <option value="hin">hindi</option>
+                        <option value="jap">japanese</option>
+                        <option value="ger">german</option>
+                    </select>
+        <h2>now if i want to keep the default value blank then for that i can use 
+            one option tag without specifing it any value</h2>
+            <label for="course" >select your course language </label>
+            <select name="course" id="course">
+                <option value=""></option>
+                <option value="eng">english</option>
+                <option value="hin">hindi</option>
+                <option value="jap">japanese</option>
+                <option value="ger">german</option>
+            </select>
+            <h2>so now if i want the comments or feed back so for that i need a  large 
+                area box for large or more no of inputs so for that we'll be using the 
+                text area tag rather then the input tag</h2>
+                <label for="comments">comments</label>
+                <textarea name="comments" id="comments" rows="12" cols="50"
+                 placeholder="enter your comments or feedback in about 150 words"></textarea>
+                 
+
+</body>
+</html>
